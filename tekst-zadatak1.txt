@@ -1,0 +1,15 @@
+Zadatak1
+
+Kreirati klasu Movie sa atributima 'imdbId', 'title', 'releaseYear' i 'rating'. Dodati getere i setere. Dodati toString metodu.
+
+Ucitati podatke o filmu iz fajla 'data/movie.json' u novi Java objekat klase Movie.
+
+
+
+Izmeniti vrednost polja 'rating' na 9.0 i upisati u fajl 'data/updatedMovie.json', ali u formatu:
+
+{
+	"id": "tt0112471",
+	"title": "Before Sunrise",
+	"year": 1995
+}
