@@ -14,7 +14,7 @@ import com.google.gson.JsonArray;
 import rs.ac.bg.fon.ai.dodatna.json.zadatak2.domain.Movie;
 import rs.ac.bg.fon.ai.dodatna.json.zadatak2.util.MovieJsonUtility;
 
-public class Main {
+public class Main2 {
 
 	public static void main(String[] args) throws IOException {
 		LinkedList<Movie> movies = new LinkedList<Movie>();
