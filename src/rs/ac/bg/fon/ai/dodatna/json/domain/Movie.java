@@ -1,4 +1,4 @@
-package rs.ac.bg.fon.ai.dodatna.json.zadatak2.domain;
+package rs.ac.bg.fon.ai.dodatna.json.domain;
 
 public class Movie {
 
@@ -6,6 +6,13 @@ public class Movie {
 	private String title;
 	private int releaseYear;
 	private double rating;
+	
+	public Movie(String imdbId, String title, int releaseYear) {
+		super();
+		this.imdbId = imdbId;
+		this.title = title;
+		this.releaseYear = releaseYear;
+	}
 
 	public String getImdbId() {
 		return imdbId;

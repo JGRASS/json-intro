@@ -2,10 +2,6 @@ package rs.ac.bg.fon.ai.dodatna.json.zadatak3.service;
 
 import java.io.IOException;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-
 import rs.ac.bg.fon.ai.dodatna.json.zadatak3.util.URLConnectionUtil;
 
 public class CurrencyLayerApiCommunication {
@@ -14,7 +10,7 @@ public class CurrencyLayerApiCommunication {
 	private static final String CURRENCY_LAYER_API_URL = "http://apilayer.net/api/live";
 	
 	public double getRates(String from, String to) {
-		//http://apilayer.net/api/live?access_key=2e4baadf5c5ae6ba436f53ae5558107f&currencies=EUR
+		//http://apilayer.net/api/live?access_key=2e4baadf5c5ae6ba436f53ae5558107f&currencies=EURsource=USD
 	
 		String url = CURRENCY_LAYER_API_URL + "?" +
 				"access_key=" + ACCESS_KEY +
@@ -24,11 +20,11 @@ public class CurrencyLayerApiCommunication {
 		try {
 			String content = URLConnectionUtil.getContent(url);
 			
-			Gson gson = new GsonBuilder().create();
-			JsonObject jsonResult = gson.fromJson(content, JsonObject.class);
-			JsonObject quotes = (JsonObject) jsonResult.get("quotes");
+			// Kreiranje JSONArray objekta
 			
-			return quotes.get(from + to).getAsDouble();
+			
+			
+			return 0;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
