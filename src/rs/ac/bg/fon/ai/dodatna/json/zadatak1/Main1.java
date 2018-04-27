@@ -9,7 +9,7 @@ import com.google.gson.GsonBuilder;
 
 import rs.ac.bg.fon.ai.dodatna.json.zadatak1.domain.Movie;
 
-public class Main {
+public class Main1 {
 
 	public static void main(String[] args) throws IOException {
 		// kreiranje Gson objekta
