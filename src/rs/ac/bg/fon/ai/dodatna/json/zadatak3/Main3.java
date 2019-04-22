@@ -9,6 +9,6 @@ public class Main3 {
 		
 		double rate = comm.getRates("USD", "EUR");
 		
-		System.out.println("USD to EUR" + rate);
+		System.out.println("USD to EUR " + rate);
 	}
 }

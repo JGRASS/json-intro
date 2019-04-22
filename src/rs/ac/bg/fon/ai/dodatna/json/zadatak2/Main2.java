@@ -19,19 +19,17 @@ public class Main2 {
 		Movie movie3 = new Movie("tt2209418", "Before Midnight", 2013);
 		movies.add(movie3);
 
-		// pretvaranje u JSON Array
+		// convert Java list into JSON list
 
 		
-		// kreiranje Gson objekta
+		// create Gson object
 
 		
-		// cuvanje u fajl
-		
-		
-		
-		// ucitavanje iz JSON fajla u JSONArray
+		// save JSON to the file "data/romance.json"
 
-	
-	
+		
+		// read JSON from the file "data/romance.json"
+
+		
 	}
 }

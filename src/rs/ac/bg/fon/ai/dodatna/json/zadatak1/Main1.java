@@ -5,18 +5,14 @@ import java.io.IOException;
 public class Main1 {
 
 	public static void main(String[] args) throws IOException {
-		// kreiranje Gson objekta
-		
+		// create Gson object
 
 		
-		// deserijalizacija JSON objekta
+		// deserialize JSON to Java object
 
 		
-		
-		// serijalizacija u JSON
+		// serialize Java object to JSON
 
 	
-		
-		
 	}
 }
