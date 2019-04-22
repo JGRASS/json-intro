@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import rs.ac.bg.fon.ai.dodatna.json.zadatak2.domain.Movie;
+import rs.ac.bg.fon.ai.dodatna.json.domain.Movie;
 
 public class MovieJsonUtility {
 

@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class URLConnectionUtil {
 
-	public static String getContent(String url) throws IOException {
+	public static String fetchContentFromURL(String url) throws IOException {
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		

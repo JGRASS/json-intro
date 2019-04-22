@@ -1,9 +1,11 @@
-package rs.ac.bg.fon.ai.dodatna.json.zadatak2.domain;
+package rs.ac.bg.fon.ai.dodatna.json.domain;
 
 public class Movie {
 
+	//@SerializedName("id") 
 	private String imdbId;
 	private String title;
+	//@SerializedName("year") 
 	private int releaseYear;
 	private double rating;
 

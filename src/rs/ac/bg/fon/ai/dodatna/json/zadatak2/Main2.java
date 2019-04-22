@@ -11,7 +11,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 
-import rs.ac.bg.fon.ai.dodatna.json.zadatak2.domain.Movie;
+import rs.ac.bg.fon.ai.dodatna.json.domain.Movie;
 import rs.ac.bg.fon.ai.dodatna.json.zadatak2.util.MovieJsonUtility;
 
 public class Main2 {
@@ -37,13 +37,13 @@ public class Main2 {
 		movie3.setReleaseYear(2013);
 		movies.add(movie3);
 
-		// pretvaranje u JSON format
+		// convert Java list into JSON list
 		JsonArray romanceMoviesJson = MovieJsonUtility.serializeMovies(movies);
 		
-		// kreiranje Gson objekta
+		// create Gson object
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
-		// cuvanje u fajl
+		// save JSON to the file "data/romance.json"
 		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("data/romance.json")))) {
 			String romanceMoviesString = gson.toJson(romanceMoviesJson);
 			
@@ -52,8 +52,7 @@ public class Main2 {
 			System.out.println("Greska: " + e.getMessage());
 		}
 		
-		
-		// ucitavanje iz JSON formata
+		// read JSON from the file "data/romance.json"
 		try (FileReader reader = new FileReader("data/romance.json")) {
 			JsonArray moviesJson = gson.fromJson(reader, JsonArray.class);
 			LinkedList<Movie> newMovies = MovieJsonUtility.parseMovies(moviesJson);
